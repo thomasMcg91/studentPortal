@@ -1,0 +1,36 @@
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.deps.json
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.dll
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.pdb
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.csproj.CoreCompileInputs.cache
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.AssemblyInfoInputs.cache
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.AssemblyInfo.cs
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.dll
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.pdb
+/Users/aiden/Documents/Archive-Code/dotNet/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.csprojAssemblyReference.cache
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.deps.json
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.dll
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/bin/Debug/netcoreapp2.2/SMS.Core.pdb
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.csprojAssemblyReference.cache
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.csproj.CoreCompileInputs.cache
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.AssemblyInfoInputs.cache
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.AssemblyInfo.cs
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.dll
+/Users/aiden/OneDrive - Ulster University/Ulster-Code/COM741/SMS2-Complete/SMS.Core/obj/Debug/netcoreapp2.2/SMS.Core.pdb
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.deps.json
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.dll
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.pdb
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.csprojAssemblyReference.cache
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.csproj.CoreCompileInputs.cache
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.AssemblyInfoInputs.cache
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.AssemblyInfo.cs
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.dll
+C:\Users\mcgth\Desktop\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.pdb
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.deps.json
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.dll
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\bin\Debug\netcoreapp2.2\SMS.Core.pdb
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.csprojAssemblyReference.cache
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.csproj.CoreCompileInputs.cache
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.AssemblyInfoInputs.cache
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.AssemblyInfo.cs
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.dll
+C:\Users\mcgth\Desktop\C#\SMS2-Complete\SMS.Core\obj\Debug\netcoreapp2.2\SMS.Core.pdb

@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vscode
+/.vs
+/SMS.Test/bin/Debug/netcoreapp2.2
+/SMS.Test/obj
+/SMS.Data/bin
+/SMS.Data/obj
+/SMS.Web/bin
+/SMS.Web/obj

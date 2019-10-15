@@ -1,0 +1,45 @@
+@model TicketViewModel
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a asp-controller="Ticket" asp-action="Index">Tickets</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Create
+        </li>
+    </ol>
+</nav>
+<h3 class="mt-4 mb-4">Close Ticket</h3>
+
+<form asp-action="Close" asp-route-id="@Model.Id">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input asp-for="StudentId" type="hidden" />
+
+    <div class="form-group">
+        <label asp-for="Issue" class="control-label"></label>
+        <textarea readonly rows="5" asp-for="Issue" class="form-control"></textarea>
+        <span asp-validation-for="Issue" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Response" class="control-label"></label>
+        <textarea rows="5" asp-for="Response" class="form-control"></textarea>
+        <span asp-validation-for="Response" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Close" class="btn btn-primary" />
+        <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+    </div>
+
+</form>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

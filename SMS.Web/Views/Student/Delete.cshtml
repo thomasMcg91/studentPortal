@@ -1,0 +1,46 @@
+@model Student
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a asp-controller="Student" asp-action="Index">Students</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Delete
+        </li>
+    </ol>
+</nav>
+
+<h3 class="mt-4 mb-4">Delete Student</h3>
+
+<h4 class="mb-4">Are you sure you want to delete this Student?</h4>
+
+<div>
+    <!-- display the student to be deleted using a <dl>              -->
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+        
+        <dt class="col-sm-3">Course</dt>
+        <dd class="col-sm-9">@Model.Course</dd>
+        
+        <dt class="col-sm-3">Age</dt>
+        <dd class="col-sm-9">@Model.Age</dd>
+        
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+        </dl>
+
+    <form asp-action="DeleteConfirm">
+
+        <input type="hidden" asp-for="Id" class="form-control"/>
+        
+        <div class="form-group">
+            <input type="submit" value="Delete" class="btn btn-danger"/>
+            <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+        </div>
+    </form>
+</div>

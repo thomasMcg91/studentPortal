@@ -1,0 +1,47 @@
+﻿@model IList<Ticket>
+@using System.Security.Claims
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Tickets
+        </li>
+    </ol>
+</nav>
+
+<h3>Open Ticket List </h3>
+
+<!-- button to create a ticket only visible to users with Admin or Manager role -->
+<div asp-authorize asp-roles="Admin,Manager">
+    <div class="mt-4 mb-4">
+        <a asp-action="Create" class="btn btn-primary btn-sm">Create Ticket</a>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+         <th>Id</th>
+         <th>Student</th>
+         <th>Issue</th>
+         <th>Created</th>           
+         <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach(var t in Model) {
+          <tr>
+            <td>@t.Id</td>
+            <td>@t.Student.Name</td>
+            <td>@t.Issue</td>
+            <td>@t.CreatedOn</td>              
+            <td><a asp-roles="Admin,Manager" asp-action="close" asp-route-id="@t.Id" class="btn btn-link">
+                   <i class="material-icons">feedback</i></a>
+            </td>
+         </tr>
+      }
+    </tbody>
+</table>

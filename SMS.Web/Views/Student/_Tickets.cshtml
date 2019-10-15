@@ -1,0 +1,29 @@
+
+<table class="table table-sm">
+    <thead>
+        <tr class="bg-warning">
+            <th>Issue</th>
+            <th>Created</th>
+            <th>Active</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var t in Model.Tickets) {
+            <tr>              
+                <td>
+                    <p class="text-secondary"><i class="material-icons">help</i>@t.Issue</p>
+                    <p class="text-info">@t.Response</p>
+                </td>
+                <td>@t.CreatedOn</td>  
+                <!-- Use if to render a done icon if Active and a clear icon if inactive -->
+                <td>   
+                    <!-- This is an example of the ConditionTagHelper contained in the Extensions folder -->
+                    <!-- replaces need for use of  if (condition) { //render html } -->
+                    <i asp-condition=@t.Active class="material-icons">done</i>                 
+                    <i asp-condition=@(!t.Active) class="material-icons">clear</i>                  
+                </td>
+            </tr>   
+        }
+    </tbody>
+</table>

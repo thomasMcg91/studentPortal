@@ -1,0 +1,37 @@
+@model ModuleViewModel
+
+<h3 class="mt-4 mb-4">Add Module</h3>
+
+<form asp-action="AddModule">
+    <!-- we hide the Model StudentId as its not user editable but needs to be in the form  -->
+    <!-- to ensure the Ticket passed to the controller is complete. We also only collect   -->
+    <!-- Issue as CreatedOn and Active can be set in contoller before passing to service   -->
+    <input type="hidden" asp-for="StudentId" class="form-control" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="ModuleId" class="control-label"></label>
+        <select asp-for="ModuleId" class="form-control" asp-items="@Model.Modules" ))">
+            <option>Select Module</option>
+        </select>
+        <span asp-validation-for="ModuleId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Grade" class="control-label"></label>
+        <input asp-for="Grade" class="form-control"></input>
+        <span asp-validation-for="Grade" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+        <a class="btn btn-secondary" asp-action="Details" asp-route-id=@Model.StudentId>Cancel</a>
+    </div>
+
+</form>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,36 @@
+﻿<table class="table table-sm">
+    <thead>
+        <tr class="bg-light">
+            <th>Module</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sm in Model.StudentModules)
+        {
+            <tr>
+                <td>@sm.Module.Title</td>
+                <td>@sm.Grade</td>
+                <td asp-role="Admin,Manager">
+                    <form asp-action="RemoveModule" asp-route-studentid=@sm.StudentId asp-route-moduleid=@sm.ModuleId>
+
+                        <button type="submit" class="btn btn-link"><i class="material-icons">delete</i></button>
+
+                        <a class="btn btn-link" asp-action="editmodule"
+                           asp-route-studentId=@sm.StudentId
+                           asp-route-moduleId=@sm.ModuleId>
+                            <i class="material-icons">edit</i>
+                        </a>
+                    </form>
+
+                </td>
+            </tr>
+        }
+        <!--  this example uses the ConditionalTagHelper asp-condition -->
+        <!-- only render this column if there are no student modules -->
+        <tr asp-condition=@Model.HasNoStudentModules>
+            <td> No modules found.... </td>
+        </tr>
+    </tbody>
+</table>

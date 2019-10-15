@@ -1,0 +1,40 @@
+﻿@model IList<Student>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Students</li>
+    </ol>
+</nav>
+
+<h3>Student List</h3>
+
+<!-- add an action link styled as a button to navigate to Create Action -->
+<a asp-roles="Admin" asp-action="Create" class="btn btn-primary btn-sm mt-4 mb-4">Create Student</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var s in Model) {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>@s.Course</td>
+                <td>@s.Age</td>
+                <td>
+                    <a asp-r asp-action="Details" asp-route-id="@s.Id"><i class="material-icons">visibility</i></a> 
+                    <a asp-roles="Admin,Manager" asp-action="Edit" asp-route-id="@s.Id"><i class="material-icons">edit</i></a> 
+                    <a asp-roles="Admin" asp-action="Delete" asp-route-id=@s.Id><i class="material-icons">delete</i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

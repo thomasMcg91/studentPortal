@@ -1,0 +1,56 @@
+﻿@model StudentViewModel
+
+<!-- navigation breadcrumbs -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a asp-controller="Student" asp-action="Index">Students</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Details
+        </li>
+    </ol>
+</nav>
+
+<h3 class="mt=4 mb-4">Student Details</h3>
+
+<!-- Description list of student details -->
+<dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Course</dt>
+    <dd class="col-sm-9">@Model.Course</dd>
+
+    <dt class="col-sm-3">Age</dt>
+    <dd class="col-sm-9">@Model.Age</dd>
+
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">@Model.Email</dd>
+
+    <!-- GetStudent service method Includes Profile -->
+    <dt class="col-sm-3">Grade</dt>
+    <dd class="col-sm-9">@Model.Grade <classification grade=@Model.Grade></classification>
+    </dd>
+
+
+</dl>
+
+<!-- Admin panel - only users with specified roles and edit, add a module or ticket. Any authrorised user can view list of students -->
+<div class="mt-4 mb-3">
+    <a asp-roles="Admin,Manager" asp-action="Edit"         asp-route-id=@Model.Id  class="btn btn-link btn-sm"><i class="material-icons">edit</i>Edit Student</a>
+    <a asp-roles="Admin,Manager" asp-action="AddModule"    asp-route-id=@Model.Id  class="btn btn-link btn-sm"><i class="material-icons">note_add</i>Add Module</a>
+    <a asp-roles="Admin,Manager" asp-action="CreateTicket" asp-route-id=@Model.Id  class="btn btn-link btn-sm"><i class="material-icons">add_comment</i>Add Ticket</a>
+    <a asp-authorize             asp-action="Index"                                class="btn btn-link btn-sm"><i class="material-icons">arrow_back</i>Back to Students</a>
+</div>
+
+<!-- Partial rendering the student modules -->
+<partial name="_Modules" />
+
+<!-- Partial rendering the student tickets -->
+<partial name="_Tickets" />
+
+

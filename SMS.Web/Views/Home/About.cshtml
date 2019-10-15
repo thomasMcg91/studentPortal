@@ -1,0 +1,24 @@
+﻿@model AboutViewModel
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            About
+        </li>
+    </ol>
+</nav>
+
+
+
+<div class="jumbotron">
+    <h4 class="display-4">About Us</h4>
+    <p class="lead">Who are We?</p>
+    <hr class="my-4">
+    <p>@Model.Message</p>
+    <p>We were born on @Model.Formed</p>
+    <p>And are in operation for @Model.Days days</p></p>
+</div>
+
+
